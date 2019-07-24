@@ -1,0 +1,13 @@
+<p>show-tours works!</p>
+<table class="table table-striped">
+    <tr>
+        <th>Id</th>
+        <th>Tour Name</th>
+        <th>Price</th>
+    </tr>
+    <tr *ngFor="let eachTour of tourList">
+        <td>{{eachTour.id}}</td>
+        <td>{{eachTour.tourName}}</td>
+        <td>{{eachTour.price}}</td>
+    </tr>
+</table>

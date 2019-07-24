@@ -1,3 +1,4 @@
+import { NavigationLinks } from './navigation-links';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'travelService';
+  subHeading = 'Chennai';
+
+  // links: string[] = ['home', 'catalog', 'payment', 'contact'];
+
+  links: NavigationLinks[] = [
+  {text: 'Home', link: '/search'},
+  {text: 'Catalog', link: '/show'}
+  ];
 }
